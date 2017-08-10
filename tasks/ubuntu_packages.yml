@@ -1,5 +1,11 @@
 ---
 
-- apt_repository:
+- name:  Install HAproxy 1.5 PPA
+  apt_repository:
     repo: 'ppa:vbernat/haproxy-1.5'
     update_cache: yes
+
+- name:  Install HAproxy 1.5
+  apt:
+    pkg: haproxy
+    state: installed

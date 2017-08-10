@@ -1,0 +1,6 @@
+---
+
+- name: Install HAProxy on Centos
+  yum:
+    pkg: haproxy
+    state: installed
