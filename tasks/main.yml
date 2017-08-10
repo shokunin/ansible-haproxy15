@@ -1,0 +1,3 @@
+---
+- { include: centos_packages.yml, when: ansible_distribution == "CentOS" }
+- { include: ubuntu_packages.yml, when: ansible_distribution == "Ubuntu" }
